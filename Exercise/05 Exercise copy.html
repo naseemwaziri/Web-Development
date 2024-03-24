@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        :root {
+            --primary-color: #e221c8d3;
+            --text-color: white;
+            --secondary-color: #e9cee8e7;
+        }
+
+        body {
+            background-color: black;
+
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav {
+            background-color: var(--primary-color);
+            padding: 12px 0;
+            border-radius: 7px;
+        }
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 23px;
+            font-weight: bolder;
+            color: var(--text-color);
+        }
+        ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        .container{
+            background-color: #0dbe51;
+            border-radius: 5px;
+            margin: 14px 20px;
+            display: flex;
+        }
+        
+        .box1{
+            background-color: pink;
+            border-radius: 5px;
+            height: 60vh;
+            width: 60vw;
+            margin: 30px 60px;
+        }
+        .box2{
+            background-color: skyblue;
+            border-radius: 5px;
+            height: 60vh;
+            width: 60vw;
+            margin: 30px 60px;
+        }
+        .item1{
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+            margin: 2px 56px;
+            padding: 29px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .item2{
+            background-color: #a98e69;
+            height: 7vh;
+            width: 100%;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/Web-Development-Course/Exercise/02 Exercise.html">Home</a></li>
+                <li><a href="/Web-Development-Course/Exercise/03 Exercise.html">Services</a></li>
+                <li><a href="/Web-Development-Course/Exercise/01 Exercise.html">About</a></li>
+                <li><a href="/Web-Development-Course/23 Veritables.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="item1">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.<br> Molestias
+             ab pariatur, culpa non modi quia, excepturi
+        </div>
+
+        <div class="item2"></div>
+    </footer>
+</body>
+</html>
