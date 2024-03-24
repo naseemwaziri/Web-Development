@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in CSS</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            height: 80vh;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;    
+             /* to centered vertically */
+
+            /* justify-content: flex-end; */
+            /* justify-content: flex-start; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+
+            align-content: center;
+            align-content: flex-start;
+            /* to centered more than one lines */
+            /* there is no jusstify-items in flexbbox */
+
+            flex-flow: row wrap;
+
+            gap: 30px;
+            /* row-gap: 30px; */
+            /* column-gap: 30px; */
+            /* gap: 10px 30px; */
+            
+        }
+
+        .item{
+            height: 82px;
+            width: 82px;
+            background-color: red;
+            border: 2px solid black;
+            margin: 4px;
+
+            /* flexbox properity for items */ 
+
+            flex-grow: 1;
+            /* sub boxes same jaga lega */
+        }
+        .item1{
+            flex-grow: 3;
+            /* flex-shrink: 2; */
+            /* flex-shrink: 2; <-- jub screen schota ho ga to ye 2 tak shrink kare ga  */
+
+            /* align-self: flex-end; */
+        }
+
+
+
+        /* Default order is zeor"0" ...
+         jiska order kAam hoga wo pehle aaye ga 
+        or jis ka ziada ho ga wo bad me aaywe ga  */
+
+        .order-1{
+            order: 1;
+        }
+        .order-2{
+            order: 2;
+        }
+        .order-3{
+            order: 3;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <divv class="item item1">1</divv>
+            <div class="item order-1">2</div>
+            <div class="item order-3">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            
+        </div>
+    </main>
+</body>
+</html>

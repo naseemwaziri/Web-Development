@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Property In CSS</title>
+    <!-- http://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid red;
+            display: inline-block;
+
+            width: 344px;
+            padding: 45px;
+            margin: 34px;
+
+            /* display: flex; */
+            /* display: grid; */
+            justify-content: center;
+            /* display: inline-flex; */
+        }
+
+        /* .box1{
+            display: none;
+            visibility: hidden;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="box box1">I am a Box</div>
+    <div class="box">Also a Box</div>
+    <span>I am a 1st span..</span>
+    <span>I am a 2nd sepn</span>
+</body>
+
+</html>
