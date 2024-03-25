@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow & Outlines In CSS</title>
+    <style>
+
+    .box{
+        border: 2px solid red; 
+        padding: 34px;
+        /* box-shadow: h-offset v-offset blur spread color inset; */
+        box-shadow: 5px 5px 15px 5px red ;
+    }
+    .box1{
+        border: 10px solid green;
+        border-radius: 6px;
+        margin: 30px;
+        padding: 30px;
+        /* text-shadow: h-offset v-offset blur color; */
+        text-shadow: 2px 2px 4px red;
+        outline: 4px solid rgb(242, 255, 0);
+        outline-offset: 4px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 900;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">I am a Box</div>
+    <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quis voluptate quia expedita libero non iusto molestiae quo, doloremque nesciunt 
+        sint numquam veritatis dolore optio dolorem consectetur quaerat ratione ipsa excepturi!
+    </div>
+</body>
+</html>

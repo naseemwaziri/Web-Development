@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+
+        /* .box::first-line{
+            color: rgb(52, 174, 22);
+        } */
+
+        .boxes *{
+            color: blue;
+            border: 2px solid red;
+        }
+
+        /* [data-color="primary"]{
+            padding-top: 45px;
+            border-radius: 6px;
+        } */
+
+        /* p, a, box, [data-color="primary"]{
+            padding-top: 45px;
+            border-radius: 6px;
+        } */
+
+        /* .box:nth-child(even){
+            background-color: blue;
+        } */
+
+        /* .box:nth-last-child(1){
+            background-color: rgb(20, 182, 197);
+        } */
+
+        .boxes::before{
+            content: "He will become the first Child";
+            color: aqua;
+        }
+        .boxes::after{
+            content: "It will appear at the end of the Boxes";
+            color: blueviolet;
+        }
+        
+        ::selection{
+            color: rgb(7, 162, 30);
+            background-color: black;
+        }
+        .box::first-letter{
+            color: rgb(208, 23, 165);
+            font-size: 35px;
+        }
+        input::placeholder{
+            color: rgb(26, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+          <div data-color="primary" class="box">I am a 1st Box Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque esse tempore omnis voluptatum ipsam mollitia provident quisquam sed error numquam recusandae, optio iste, similique debitis dignissimos, maxime vero reprehenderit est perferendis quae officiis eos adipisci velit. Minus consectetur </div>
+          <div class="box">I am a Box</div>
+          <div class="box">I am a Box</div>
+          <div class="box">I am a Box</div>
+          <input type="text" placeholder="Type your name here">
+    </div>
+</body>
+</html>

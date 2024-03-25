@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        [data-x=a]{
+             background-color: red;
+             color: aqua !important;
+        }
+        h2.red{
+            color: red;
+        }
+        h2#yellow{
+            color: yellow;
+        }
+    </style>
+</head>
+ <body>     <!-- data-x="a" is the example of attribute selector -->
+           <h1 id="item" class="new" data-x="a">The Cascade Algorithum</h1>
+           <h2 id="yellow" class="red">This is an example</h2>
+
+
+    <!-- The Cascade Algorithum
+    1. Position and order of apperence
+    2. Specificity
+    3. Orign
+    4. Importance
+    
+    Priaroty List
+    1. inline CSS          color: aqua !important <-- if we write important like this than 
+    2. ID selector                                    it will be the most important and applyed it.
+    3. class selector
+    4. Element selector
+    5. Universal selector -->
+
+</body>
+</html>

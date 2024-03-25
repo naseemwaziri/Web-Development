@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Veritables in CSS</title>
+  <style>
+    /* Global Veritables */
+:root {
+      --color: #4fc300;
+      --seccolor: #a1dd8f;
+      --defpad: 23px;
+      --defop: 0.3;
+      
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    ul li {
+      list-style: none;
+      padding: var(--defpad);
+      /* opacity: 0.3; */
+      opacity: var(--defop);
+    }
+    ul {
+      display: flex;
+    }
+    div:first-child {
+      background-color: var(--color);
+    }
+    .container {
+      background-color: var(--seccolor);
+    }
+    ul li:first-child{
+      /* Local Veritables */
+      --color: #b47e0c;
+      background-color: var(--color);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <ul>
+      <li>Home</li>
+      <li>Contact</li>
+      <li>About</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ad error corrupti dicta dolor suscipit a ratione at nemo placeat, quasi aut, fuga laborum, cumque quas nihil alias dolorem. Dolor praesentium nihil fugit voluptates enim est, temporibus, voluptate nisi ipsam sint quos dignissimos ad asperiores.
+  </div>
+</body>
+</html>

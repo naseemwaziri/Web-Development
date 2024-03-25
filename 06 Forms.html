@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <style>
+        body {
+            background-color: rgb(156, 252, 255);
+        }
+
+        textarea {
+            background-color: rgb(248, 250, 189);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Login & Signup.</h2>
+    <form action="post">
+        <div>
+            <label for="username">Enter your Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter username" />
+        </div>
+        <br />
+        <div>
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" />
+        </div>
+        <br />
+        <div>
+            <label for="dateofbirth">Enter your Date of Birth:</label>
+            <input type="date" id="dateofbirth" name="date of birth" />
+        </div>
+        <br />
+        <div>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+        </div>
+        <br />
+        <div>
+            <label for="comment">Enter your Comment:</label>
+            <br />
+            <textarea name="comment" id="comment" cols="40" rows="5"></textarea>
+        </div>
+        <br />
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, vel
+                ullam quia architecto tempora deserunt error sint minus earum harum
+                iste perspiciatis culpa ipsa, quis ad magni, quisquam et sequi?
+            </p>
+            <input type="checkbox" id="accept" name="accept" value="Yes" />
+            <label for="accept">Accept Terms & Conditions</label>
+        </div>
+        <br />
+        <div>
+            <label for="login">Login Now:</label>
+            <input type="button" id="login" name="" value="login" />
+        </div>
+        <br />
+        <select name="subscribe">
+            <option value="login">log in</option>
+            <option value="signup">sign up</option>
+            <option value="subscribe">subscribe</option>
+        </select>
+    </form>
+</body>
+
+</html>
